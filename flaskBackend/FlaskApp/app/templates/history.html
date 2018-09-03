@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <div class="site-content">
+        <h1>History of all document versions</h1>
+        <a href="{{url_for('document.merge')}}">Merge to stable version</a>
+        <ul></ul>
+    </div>
+{% endblock %}
+
+{% block styles %}
+    {{super()}}
+    <link rel="stylesheet" href="{{url_for('static', filename='history.css')}}">
+{% endblock %}

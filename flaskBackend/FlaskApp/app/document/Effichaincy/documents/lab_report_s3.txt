@@ -1,0 +1,12 @@
+Lab Report 
+
+P2:
+0 = int
+„hello“ = string
+101 = int
+-1 = int
+true = boolean
+„true“ = string
+„33“ = string
+‘3‘ = string
+3.1415 = float

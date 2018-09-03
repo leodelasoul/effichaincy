@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <div class="site-content">
+        <h2>Oops, that File has already been uploaded</h2>
+        <p><a href="{{ url_for('main.index') }}">Return to upload page</a></p>
+    </div>
+{% endblock %}
+
+{% block styles %}
+    {{super()}}
+    <link rel="stylesheet" href="{{url_for('static', filename='error_1.css')}}">
+{% endblock %}

@@ -1,0 +1,35 @@
+*,html,body,form{
+    background-color: #1a1a1a;
+    background-image: none;
+    background-repeat: no-repeat;
+    color: #f6f6f6;
+}
+
+#login{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.row{
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #1a1a1a;
+    color: #f6f6f6;
+    margin-bottom: auto;
+    margin-top: 10%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 0px;
+    border:2px solid #f6f6f6;
+}
+
+.container,form{
+    text-align: center;
+}
+
+
+.sign_up,form,.col,p,.row,.login{
+    border-radius: 15px 50px;
+}

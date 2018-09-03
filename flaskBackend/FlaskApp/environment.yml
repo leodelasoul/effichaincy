@@ -1,0 +1,16 @@
+name: projectEnv
+channels:
+  - bioconda
+  - cmckeague
+  - conda-forge
+  - defaults
+dependencies:
+  - flask-bootstrap
+  - flask
+  - flask-login
+  - flask-migrate
+  - flask-moment
+  - flask-sqlalchemy
+  - flask-wtf
+  - beautifulsoup4
+prefix: C:\Users\please do disturb\Anaconda3\envs\projectEnv

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block app_content %}
+    <div class="site-content">
+        <h1>Voilá</h1>
+        <p>Your file has been uploaded!</p>
+        <iframe frameborder="0" src="{{url_for('document.show_doc', f=file) }}" height="500" width=1100></iframe>
+        <p>You can see this file and a bunch more right here:</p>
+        <button type="button" class="btn"><a href="{{url_for('document.view_documents')}}">History</a></button>
+    </div>
+{% endblock %}
+
+{% block styles %}
+    {{super()}}
+    <link rel="stylesheet" href="{{url_for('static', filename='upload_completion.css')}}">
+{% endblock %}

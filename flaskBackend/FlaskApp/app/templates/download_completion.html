@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block app_content %}
+    <div class="site-content">
+        <h1>Successfully downloaded the document</h1>
+        <p>Yay!</p>
+    </div>
+{% endblock %}
+
+{% block styles %}
+    {{super()}}
+    <link rel="stylesheet" href="{{url_for('static', filename='upload_completion.css')}}">
+{% endblock %}

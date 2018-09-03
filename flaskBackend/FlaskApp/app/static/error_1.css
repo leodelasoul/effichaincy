@@ -1,0 +1,9 @@
+body{
+    background: url(static/images/planet.svg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: transparent;
+    font-family: Noto Sans, sans-serif;
+}

@@ -1,0 +1,17 @@
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a1a !important;
+    background-color: none;
+    display: inline-block;
+    cursor: pointer; /* "hand" cursor */
+}

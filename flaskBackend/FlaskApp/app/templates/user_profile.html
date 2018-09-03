@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+<div class="site-content">
+    <table>
+        <tr valign="top">
+            <td width="150px"><img src="{{ user.avatar(128) }}"></td>
+            <td>
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                <!-- Categories: success (green), info (blue), warning (yellow), danger (red) -->
+                {% if messages %}
+                {% for category, message in messages %}
+                <div class="alert alert-{{ message }} alert-dismissible" role="alert">
+                    {{ message }}
+                </div>
+                {% endfor %}
+                {% endif %}
+                {% endwith %}
+                <h1>Profile</h1>
+                <h2 class="border_underneath"> {{ user.username }} </h2>
+                {% if user.firstname %}<p class="border_underneath">Name: {{ user.firstname }}</p>{% endif %}
+                {% if user.surname %}<p class="border_underneath">Surname: {{ user.surname }}</p>{% endif %}
+                {% if user.about_me %}<p class="border_underneath">About me: {{ user.about_me }}</p>{% endif %}
+                {% if user.status %}<p class="border_underneath">Current status: {{ user.status }}</p>{% endif %}
+                {% if user.last_online %}<p class="border_underneath">Last online: {{ user.last_online }}</p>{% endif %}
+                {% if user == current_user %}
+                <p><a href="{{ url_for('users.edit_profile') }}">Edit profile</a></p>
+                {% endif %}
+            </td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('static', filename='user_profile.css')}}">
+{% endblock %}

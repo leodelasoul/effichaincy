@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block navbar %}
+    <nav class="navbar navbar-dark">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p id="effichaincy">Effichaincy</p>
+            </div>
+         </div>
+    </nav>
+{% endblock %}
+
+{% block app_content %}
+    <div class="row">
+        <h1 id="login">{{ ('Login') }}</h1>
+    <div class="col">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        <!-- Categories: success (green), info (blue), warning (yellow), danger (red) -->
+        {% if messages %}
+        {% for category, message in messages %}
+        <div class="alert alert-{{ message }} alert-dismissible" role="alert">
+            {{ message }}
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+        {{ wtf.quick_form(form) }}
+    </div>
+</div>
+<br>
+    <p>{{ ('New User?') }} <a href="{{ url_for('auth.register') }}">{{ ('Click to Register!') }}</a></p>
+{% endblock %}
+
+{% block styles %}
+    {{super()}}
+    <link rel="stylesheet" href="{{url_for('static', filename='login.css')}}">
+{% endblock %}

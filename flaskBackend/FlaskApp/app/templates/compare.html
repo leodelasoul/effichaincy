@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <div class="site-content">
+        <h1>Compare your documents here!</h1>
+        <iframe frameborder="0" src="{{url_for('document.show_doc_content', file=file1) }}" height="400" width="50%"></iframe>
+        <iframe frameborder="0" src="{{url_for('document.show_doc_content', file=file2) }}" height="400" width="50%"></iframe>
+        <div id="button_container">
+            <a href="{{url_for('document.show_comparison_result')}}">Compare!</a>
+            
+        </div>
+    </div>
+{% endblock %}
+
+{% block styles %}
+    {{super()}}
+    <link rel="stylesheet" href="{{url_for('static', filename='compare.css')}}">
+{% endblock %}

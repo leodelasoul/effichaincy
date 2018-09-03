@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <div class="site-content">
+    <h1>Merge result:</h1>
+       <iframe frameborder="0" src="{{url_for('document.show_doc_content',file='merge_result.txt') }}" height="500" width=1100></iframe>
+    </div>
+{% endblock %}
+
+
+{% block styles %}
+    {{super()}}
+    <link rel="stylesheet" href="{{url_for('static', filename='history.css')}}">
+{% endblock %}

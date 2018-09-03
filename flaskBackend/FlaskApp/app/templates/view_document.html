@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block app_content %}
+    <div class="site-content">
+        <h1>Content is king! How about we look at that file of yours:</h1>
+        <iframe frameborder="0" src="{{url_for('document.show_doc_content', file=file) }}" height="500" width="1100"></iframe>
+        <p>Want to get back to the overview and look for something else?</p>
+        <button type="button" class="btn"><a href="{{url_for('document.view_documents')}}" class="button_link">Return</a></button>
+    </div>
+{% endblock %}
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('static', filename='view_document.css')}}">
+{% endblock %}

@@ -1,0 +1,27 @@
+pre{
+    display:inline-block;
+    border: none;
+    width: 33%;
+}
+
+#list_items{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.history_items{
+    font-size: 17px;
+    color: #5e6168;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0 8px 23px;
+    list-style: none !important;
+}
+
+.history_name{
+    font-weight:600;
+    color: #009b77
+}
+
+history_download, history_compare{
+    font-weight:600;
+}

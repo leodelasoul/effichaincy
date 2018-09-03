@@ -1,0 +1,339 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+<div class="site-content">
+ <h1>
+  History of all document versions
+ </h1>
+ <a href="{{url_for('document.merge')}}">
+  Merge to stable version
+ </a>
+ <ul>
+  <li class="history_items">
+   <span class="history_hash">
+    Hash: ..8e3e |
+   </span>
+   <span class="history_name">
+    <a href="/doc/historycontent/1/lab_report_v7.txt">
+     lab_report.txt |
+    </a>
+   </span>
+   <span class="history_version">
+    Version: 7 |
+   </span>
+   <span class="history_time">
+    Upload time: 2018-07-27 06:40:11.227173 |
+   </span>
+   <span class="history_download">
+    <a href="/doc/uploads/1/lab_report_v7.txt">
+     Download
+    </a>
+   </span>
+   <span class="history_compare">
+    <a href="/doc/compare/app/document/Effichaincy/documents/1/lab_report_v7.txt%3Bapp/document/Effichaincy/documents/1/lab_report_v5.txt">
+     Compare
+    </a>
+   </span>
+   <p>
+    Author: hay
+   </p>
+  </li>
+  <li class="history_items">
+   <span class="history_hash">
+    Hash: ..8475 |
+   </span>
+   <span class="history_name">
+    <a href="/doc/historycontent/9/what_are_pythons_v2.txt">
+     what_are_pythons.txt |
+    </a>
+   </span>
+   <span class="history_version">
+    Version: 2 |
+   </span>
+   <span class="history_time">
+    Upload time: 2018-07-26 23:17:40.858001 |
+   </span>
+   <span class="history_download">
+    <a href="/doc/uploads/9/what_are_pythons_v2.txt">
+     Download
+    </a>
+   </span>
+   <span class="history_compare">
+    <a href="/doc/compare/app%5Cdocument%5CEffichaincy/documents/9/what_are_pythons_v2.txt%3Bapp%5Cdocument%5CEffichaincy/documents/9/what_are_pythons_v1.txt">
+     Compare
+    </a>
+   </span>
+   <p>
+    Author: Dani
+   </p>
+  </li>
+  <li class="history_items">
+   <span class="history_hash">
+    Hash: ..83fa |
+   </span>
+   <span class="history_name">
+    <a href="/doc/historycontent/9/what_are_pythons_v1.txt">
+     what_are_pythons.txt |
+    </a>
+   </span>
+   <span class="history_version">
+    Version: 1 |
+   </span>
+   <span class="history_time">
+    Upload time: 2018-07-26 23:16:20.197470 |
+   </span>
+   <span class="history_download">
+    <a href="/doc/uploads/9/what_are_pythons_v1.txt">
+     Download
+    </a>
+   </span>
+   <span class="history_compare">
+    <a href="/doc/compare/app%5Cdocument%5CEffichaincy/documents/9/what_are_pythons_v1.txt%3Bapp%5Cdocument%5CEffichaincy/documents/9/what_are_pythons_v1.txt">
+     Compare
+    </a>
+   </span>
+   <p>
+    Author: Dani
+   </p>
+  </li>
+  <li class="history_items">
+   <span class="history_hash">
+    Hash: ..bbca |
+   </span>
+   <span class="history_name">
+    <a href="/doc/historycontent/9/test_text_v2.txt">
+     test_text.txt |
+    </a>
+   </span>
+   <span class="history_version">
+    Version: 2 |
+   </span>
+   <span class="history_time">
+    Upload time: 2018-07-25 22:41:45.746635 |
+   </span>
+   <span class="history_download">
+    <a href="/doc/uploads/9/test_text_v2.txt">
+     Download
+    </a>
+   </span>
+   <span class="history_compare">
+    <a href="/doc/compare/app%5Cdocument%5CEffichaincy/documents/9/test_text_v2.txt%3Bapp%5Cdocument%5CEffichaincy/documents/9/test_text_v1.txt">
+     Compare
+    </a>
+   </span>
+   <p>
+    Author: Dani
+   </p>
+  </li>
+  <li class="history_items">
+   <span class="history_hash">
+    Hash: ..73cd |
+   </span>
+   <span class="history_name">
+    <a href="/doc/historycontent/9/test_text_v1.txt">
+     test_text.txt |
+    </a>
+   </span>
+   <span class="history_version">
+    Version: 1 |
+   </span>
+   <span class="history_time">
+    Upload time: 2018-07-25 22:41:08.036299 |
+   </span>
+   <span class="history_download">
+    <a href="/doc/uploads/9/test_text_v1.txt">
+     Download
+    </a>
+   </span>
+   <span class="history_compare">
+    <a href="/doc/compare/app%5Cdocument%5CEffichaincy/documents/9/test_text_v1.txt%3Bapp%5Cdocument%5CEffichaincy/documents/9/test_text_v1.txt">
+     Compare
+    </a>
+   </span>
+   <p>
+    Author: Dani
+   </p>
+  </li>
+  <li class="history_items">
+   <span class="history_hash">
+    Hash: ..b560 |
+   </span>
+   <span class="history_name">
+    <a href="/doc/historycontent/6/lab_report_v6.txt">
+     lab_report.txt |
+    </a>
+   </span>
+   <span class="history_version">
+    Version: 6 |
+   </span>
+   <span class="history_time">
+    Upload time: 2018-07-25 13:43:19.682242 |
+   </span>
+   <span class="history_download">
+    <a href="/doc/uploads/6/lab_report_v6.txt">
+     Download
+    </a>
+   </span>
+   <span class="history_compare">
+    <a href="/doc/compare/app/document/Effichaincy/documents/6/lab_report_v6.txt%3Bapp/document/Effichaincy/documents/6/lab_report_v6.txt">
+     Compare
+    </a>
+   </span>
+   <p>
+    Author: huibu
+   </p>
+  </li>
+  <li class="history_items">
+   <span class="history_hash">
+    Hash: ..0efb |
+   </span>
+   <span class="history_name">
+    <a href="/doc/historycontent/1/lab_report_v5.txt">
+     lab_report.txt |
+    </a>
+   </span>
+   <span class="history_version">
+    Version: 5 |
+   </span>
+   <span class="history_time">
+    Upload time: 2018-07-25 13:32:13.424678 |
+   </span>
+   <span class="history_download">
+    <a href="/doc/uploads/1/lab_report_v5.txt">
+     Download
+    </a>
+   </span>
+   <span class="history_compare">
+    <a href="/doc/compare/app/document/Effichaincy/documents/1/lab_report_v5.txt%3Bapp/document/Effichaincy/documents/1/lab_report_v4.txt">
+     Compare
+    </a>
+   </span>
+   <p>
+    Author: hay
+   </p>
+  </li>
+  <li class="history_items">
+   <span class="history_hash">
+    Hash: ..4b8a |
+   </span>
+   <span class="history_name">
+    <a href="/doc/historycontent/1/lab_report_v4.txt">
+     lab_report.txt |
+    </a>
+   </span>
+   <span class="history_version">
+    Version: 4 |
+   </span>
+   <span class="history_time">
+    Upload time: 2018-07-25 11:38:34.176611 |
+   </span>
+   <span class="history_download">
+    <a href="/doc/uploads/1/lab_report_v4.txt">
+     Download
+    </a>
+   </span>
+   <span class="history_compare">
+    <a href="/doc/compare/app/document/Effichaincy/documents/1/lab_report_v4.txt%3Bapp/document/Effichaincy/documents/1/lab_report_v3.txt">
+     Compare
+    </a>
+   </span>
+   <p>
+    Author: hay
+   </p>
+  </li>
+  <li class="history_items">
+   <span class="history_hash">
+    Hash: ..e0d2 |
+   </span>
+   <span class="history_name">
+    <a href="/doc/historycontent/1/lab_report_v3.txt">
+     lab_report.txt |
+    </a>
+   </span>
+   <span class="history_version">
+    Version: 3 |
+   </span>
+   <span class="history_time">
+    Upload time: 2018-07-25 11:36:43.132203 |
+   </span>
+   <span class="history_download">
+    <a href="/doc/uploads/1/lab_report_v3.txt">
+     Download
+    </a>
+   </span>
+   <span class="history_compare">
+    <a href="/doc/compare/app/document/Effichaincy/documents/1/lab_report_v3.txt%3Bapp/document/Effichaincy/documents/1/lab_report_v2.txt">
+     Compare
+    </a>
+   </span>
+   <p>
+    Author: hay
+   </p>
+  </li>
+  <li class="history_items">
+   <span class="history_hash">
+    Hash: ..a276 |
+   </span>
+   <span class="history_name">
+    <a href="/doc/historycontent/1/lab_report_v2.txt">
+     lab_report.txt |
+    </a>
+   </span>
+   <span class="history_version">
+    Version: 2 |
+   </span>
+   <span class="history_time">
+    Upload time: 2018-07-25 11:35:53.941313 |
+   </span>
+   <span class="history_download">
+    <a href="/doc/uploads/1/lab_report_v2.txt">
+     Download
+    </a>
+   </span>
+   <span class="history_compare">
+    <a href="/doc/compare/app/document/Effichaincy/documents/1/lab_report_v2.txt%3Bapp/document/Effichaincy/documents/1/lab_report_v1.txt">
+     Compare
+    </a>
+   </span>
+   <p>
+    Author: hay
+   </p>
+  </li>
+  <li class="history_items">
+   <span class="history_hash">
+    Hash: ..1c0b |
+   </span>
+   <span class="history_name">
+    <a href="/doc/historycontent/1/lab_report_v1.txt">
+     lab_report.txt |
+    </a>
+   </span>
+   <span class="history_version">
+    Version: 1 |
+   </span>
+   <span class="history_time">
+    Upload time: 2018-07-25 11:35:35.658042 |
+   </span>
+   <span class="history_download">
+    <a href="/doc/uploads/1/lab_report_v1.txt">
+     Download
+    </a>
+   </span>
+   <span class="history_compare">
+    <a href="/doc/compare/app/document/Effichaincy/documents/1/lab_report_v1.txt%3Bapp/document/Effichaincy/documents/1/lab_report_v1.txt">
+     Compare
+    </a>
+   </span>
+   <p>
+    Author: hay
+   </p>
+  </li>
+ </ul>
+</div>
+{% endblock %}
+
+{% block styles %}
+    {{super()}}
+<link href="{{url_for('static', filename='history.css')}}" rel="stylesheet"/>
+{% endblock %}

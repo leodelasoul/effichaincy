@@ -1,0 +1,13 @@
+flask-bootstrap
+flask
+flask-login
+flask-migrate
+flask-moment
+flask-sqlalchemy
+flask-wtf
+beautifulsoup4
+gunicorn
+
+# requirements for Heroku
+# psycopg2==2.7.3.1
+# gunicorn==19.7.1

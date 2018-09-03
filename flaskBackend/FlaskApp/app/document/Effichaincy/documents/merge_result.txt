@@ -1,0 +1,36 @@
+Lab Report
+
+P2:
+0 = int
+„hello“ = string
+101 = int
+-1 = int
+true = boolean
+„true“ = string
+„33“ = string
+‘3‘ = string
+3.1415 = float
+
+P3:
+„HTML 5 kurz&gut“ was the book I picked up.
+This book is an instance of the O‘Reily kurz&gut books since there‘s several books with the same
+structure as this one, just the subject varies (JavaScript,CSS,..)
+P4:
+It belongs to the class „Book“
+- 3 parameters: title, price, date
+- title = string, price = double
+I downloaded the project folder from GitHub.
+- found Bluej in “programs“ to make sure I had Bluej installed
+- opened package.bluej in Bluej
+1.
+- we found out we needed to compile the class “Circle“ first by right clicking on it and then clicking on
+“compile“
+- compiled the other classes as well
+- right click on Circle → new Circle() → created circle 1
+- found out that we had to add a test “Canvas“ by right clicking on the actual class and then going
+on “Create Test Class NOW“
+- then we added a circle like I did before, compiled it and then by right clicking on the test onject
+“Text Fixture to Object Bench“ the circle was still there. And that was weird..
+- added triangle, clicked on “Obect Bench to Text Fixture“, then on Replace and compiled
+everything. By clicking on “Text Fixture to Object Bench“ again the triangle came back
+→ I‘m gonna do that after every added object, but will skip writing this step down from now on
